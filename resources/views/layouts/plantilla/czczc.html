@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+
+
+<html lang="es" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:locale" content="es_ES">
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="FRWmMbbpLAOyvLGPfbA4aaDyQvcyYIhL7NnTXZ6khos" />
+    <title>Efecto &quot;slide&quot; con CSS. Selectores y transiciones | Estudio Nexos | Valladolid</title>
+    <meta property="og:title" content="Efecto &quot;slide&quot; con CSS. Selectores y transiciones | Estudio Nexos | Valladolid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Estudio Nexos" />
+    <meta name="keywords" content="Diseño Desarrollo Portfolio Imprenta Prepress Software Libre debian linux SEO Inkscape Gimp Drupal Schema Microdatos Datos estructurados schema.org Google Rich cards Spam Seguridad Correo Mail Django Python Responsive Diseño y desarrollo Alojamiento Comunicaciones Gestión documental SMTP SkaCMS CSS HTML Scribus Prestashop API CDMON DNS NTFS Microsoft Malware Ingeniería Social MailChimp Tienda Online Pydio Etherpad XML-RPC JSON-LD Javascript jQuery Thunderbird Tutorial Big Data WordPress Timber Twig Leaflet OpenStreetMap Twig, Linux, Oficina, Software libre, Open Source, Valladolid, Castilla y León, Formación, Accesibilidad, Tablets, Estándares, CSS, HTML5, LibreOffice, PHP, Drupal, Python, Django, Debian, Webscrapping, Diseño, Maquetación, Imagen corporativa, Aplicaciones Web, Tienda online, Hosting, Alojamiento, Intranets, Postfix, Servidor de correo"
+    />
+    <meta name="description" content="Efecto &quot;slide&quot; con CSS. Selectores y transiciones · Recientemente hemos desarrollado un tema visual responsive para la web efisioterapia.net que funciona sobre Drupal 7. Basado en bootstrap, el tema visual debía cumplir los requerimientos de sencillez y limpieza y estar orientado principalmente a los dispositivos móviles. Para no recargar el ya excesivo código que genera el propio drupal y evitar así contruibuir a ralentizar la carga de las páginas, optamos por usar ... | Desarrollo web y servicios online. Nos dedicamos al diseño y programación de software para ofrecer a PyMES y emprendedores la posibilidad de potenciar su actividad a través de internet.  ·  · ."
+    />
+    <meta property="og:description" content="Recientemente hemos desarrollado un tema visual responsive para la web efisioterapia.net que funciona sobre Drupal 7. Basado en bootstrap, el tema visual debía cumplir los requerimientos de sencillez y limpieza y estar orientado principalmente a los dispositivos móviles. Para no recargar el ya excesivo código que genera el propio drupal y evitar así contruibuir a ralentizar la carga de las páginas, optamos por usar ... | Desarrollo web y servicios online. Nos dedicamos al diseño y programación de software para ofrecer a PyMES y emprendedores la posibilidad de potenciar su actividad a través de internet.  ·  · ."
+    />
+    <meta property="fb:admins" content="100009801935416" />
+    <meta property="og:url" content="https://estudionexos.com/post/efecto-slide-con-css-selectores-y-transiciones/" />
+    <meta property="og:image" content="http://www.estudionexos.com/public/thumbnails/9b/4d/9b4d0244dbedd424f2602fe2d3bcbe6c.jpg" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/theme/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/theme/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/theme/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/theme/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/theme/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/theme/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/theme/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/theme/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/theme/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/public/theme/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/public/theme/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/public/theme/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/public/theme/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/public/theme/manifest.json">
+    <link rel="shortcut icon" href="/public/theme/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/public/theme/mstile-144x144.png">
+    <meta name="msapplication-config" content="/public/theme/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="alternate" type="application/rss+xml" href="/feed/posts/" title="RSS de los posts de Estudio Nexos" />
+    <link rel="sitemap" href="/sitemap.xml" title="Site Map - Mapa del sitio" />
+
+    <link rel="dns-prefetch" href="https://stats.getcloud.info">
+
+    <link rel="stylesheet" href="/public/CACHE/css/d0248f9357db.css" type="text/css" />
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Javascripts
+    ================================================== -->
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
+-->
+    <script type="text/javascript" src="/public/CACHE/js/f74b8de38a4a.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Raleway:900,900i|Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://www.estudionexos.com"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Estudio Nexos"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Estudio Nexos",
+                "url": "https://www.estudionexos.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "http://www.estudionexos.com/public/theme/images/logo-nexos.png"
+                },
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "telephone": "+34983070900",
+                    "contactType": "customer service"
+                }]
+            },
+            "name": "Efecto &quot;slide&quot; con CSS. Selectores y transiciones",
+            "headline": "Entrada: Efecto &quot;slide&quot; con CSS. Selectores y transiciones",
+            "description": "Recientemente hemos desarrollado un tema visual responsive para la web efisioterapia.net que funciona sobre Drupal 7. Basado en bootstrap, el tema visual debía cumplir los requerimientos de sencillez y limpieza y estar orientado principalmente a los dispositivos móviles. Para no recargar el ya excesivo ...",
+            "articleBody": "Recientemente hemos desarrollado un tema visual responsive para la web efisioterapia.net que funciona sobre Drupal 7. Basado en bootstrap, el tema visual debía cumplir los requerimientos de sencillez y limpieza y estar orientado principalmente a los dispositivos móviles. Para no recargar el ya excesivo código que genera el propio drupal y evitar así contruibuir a ralentizar la carga de las páginas, optamos por usar la menor cantidad posible de Javascript en el tema visual y sustituirlo por técnicas CSS.
+
+                Las secciones principales de la web muestran listados de contenidos construidos con views y mediante filtros expuestos se ofrece la opción de filtrado por categoría,
+            título y otros campos.Como el filtrado de contenidos es opcional,
+            se optó porque no estuviera visible en primer plano en los dispositivos móviles,
+            con el objetivo de ahorrar espacio y mostrar siempre en primer lugar contenido relevante.No obstante la funcionalidad debía seguir siendo accesible.
+
+            Para desplegar los filtros expuestos en los dispositivos móviles se ofrece un botón,
+            pero en lugar de activarse por Javascript lo hace usando estilos y transiciones CSS.Vamos a ver a continuación cómo.
+
+            El HTML en Drupal
+
+            Para conseguir el efecto deseado se necesita emular el efecto & quot;toggle & quot;o & quot;slide & quot;con CSS y añadir las transiciones necesarias para hacer suavemente el despliegue de los campos.
+
+            Para emular el efecto Javascript usamos la técnica desarrollada aquí & lt;i aria - hidden = & quot;true & quot;class = & quot;fa fa - external - link & quot; & gt; & amp;nbsp; & lt;
+            /i&gt;. A diferencia del ejemplo, que realiza un toggle normal, nosotros vamos a realizar un efecto slide apareciendo los filtros desde un lateral.
+
+            Sobreescribimos el template & lt;code & gt;views - view--page.tpl.php & lt;
+            /code&gt; para incluir el etiquetado y las clases necesarias. El resultado:
+
+            &
+            lt;pre & gt; &
+            amp;lt;!--codigo correspondiente a los filtros expuestos-- & amp;gt; &
+            amp;lt; ? php
+            if ($exposed): ? & amp;gt; &
+            amp;lt;div class = & quot;view - filters & quot; & amp;gt; &
+            amp;lt;label id = & quot;trigger - toggle & quot;
+            for = & quot;element - toggle & quot; & amp;gt; & amp;lt;span class = & quot;btn btn -
+            default btn - sm & quot; & amp;gt; & amp;lt;i class = & quot;fa fa - filter & quot;aria - hidden = & quot;true & quot; & amp;gt; & amp;lt;
+            /i&amp;gt;&amp;amp;nbsp;Filtros&amp;lt;/span & amp;gt; & amp;lt;
+            /label&amp;gt; &
+            amp;lt;input id = & quot;element - toggle & quot;type = & quot;checkbox & quot;
+            /&amp;gt; &
+            amp;lt;div id = & quot;toggled - element & quot; & amp;gt; &
+            amp;lt; ? php print $exposed; ? & amp;gt; &
+            amp;lt;
+            /div&amp;gt; &
+            amp;lt;
+            /div&amp;gt; &
+            amp;lt; ? php endif; ? & amp;gt; &
+            lt;
+            /pre&gt;
+
+            De esta manera ya disponemos de los 3 elementos necesarios para ejecutar el efecto :
+
+
+            un elemento visible que haga de disparador : & lt;code & gt; & amp;lt;label id = & quot;trigger - toggle & quot;
+            for = & quot;element - toggle & quot; & amp;gt; & lt;
+            /code&gt;
+            un elemento oculto al que haga referencia el anterior(mediante el atributo & lt; code & gt;
+                for & lt;
+                /code&gt;): &lt;code&gt;&amp;lt;input id=&quot;element-toggle&quot; type=&quot;checkbox&quot; / & amp; gt; & lt;
+                /code&gt;
+                y el elemento a mostrar / ocultar: & lt; code & gt; & amp; lt; div id = & quot; toggled - element & quot; & amp; gt; & lt;
+                /code&gt;
+
+
+                El CSS para pantallas móviles
+
+                &
+                lt; pre & gt;
+                /* El disparador solo será visible para dispositivos de menos de 600px de ancho */
+                # trigger - toggle, #element - toggle {
+                    display: none;
+                }
+
+                /* Hacemos visible el disparador y aplicamos los estilos a partir de 600px */
+                @media(max - width: 600 px) {
+
+                    /* Hacemos visible el disparador */
+                    #
+                    trigger - toggle {
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                    /* Para conseguir el efecto de desplazamiento lateral posicionamos de manera absoluta el elemento. También le asignamos las transiciones deseadas. Al activar el disparador como se ha descrito, las propiedades se aplican en función de la transición definida  */
+                    #
+                    toggled - element {
+                        position: absolute;
+                        right: 0 px;
+                        width: 100 % ; -
+                        webkit - transition: all 1 s; -
+                        moz - transition: all 1 s; -
+                        mos - transition: all 1 s; -
+                        o - transition: all 1 s;
+                        transition: all 1 s;
+                    }
+
+                    /* Para hacer un efecto &quot;slide&quot; en lugar de ocultar el elemento con display:none, lo sacamos de la vista por un lateral */
+                    #
+                    element - toggle: not(: checked) ~#toggled - element {
+                        right: -700 px;
+                    }
+                } & lt;
+                /pre&gt;
+
+                La clave para este efecto es el uso de dos selectores CSS: la pseudoclase de negación & lt; code & gt;: not & lt;
+                /code&gt; (Info &lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-info-circle&quot;&gt;&amp;nbsp;&lt;/i & gt;) en el disparador y el selector de hermanos & lt;code & gt;~ & lt;
+            /code&gt; (Info &lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-info-circle&quot;&gt;&amp;nbsp;&lt;/i & gt;) que permite seleccionar el segundo elemento(el que queremos mostrar / ocultar) sólo si está precedido por el primero(el disparador) y ambos comparten un padre común.
+
+        En el ejemplo, la etiqueta & lt;
+        code & gt;
+        label & lt;
+        /code&gt; del disparador actuaría como un interruptor para marcar y desmarcar la etiqueta &lt;code&gt;input&lt;/code & gt;
+        del tipo & lt;
+        code & gt;
+        checkbox & lt;
+        /code&gt;. Las propiedades se aplicarían al elemento que no esté representado por el argumento, o sea, cuando el &lt;code&gt;input&lt;/code & gt;
+        no está marcado el elemento a mostar / ocultar permanece fuera de la vista porque se le aplica un margen lateral negativo.Si el & lt;
+        code & gt;
+        input & lt;
+        /code&gt; se marca (al pinchar el &lt;code&gt;label&lt;/code & gt;
+        que actúa de disparador), las propiedades no se aplican y el elemento va a su posición en la pantalla(sin desplazamiento lateral).
+
+        Este efecto de vaivén se suaviza con la propiedad de transición que asignemos al elemento a mostar / ocultar.Así de fácil: D
+
+            &
+            lt;
+        hr / & gt;
+        Ejemplo
+
+
+
+        El código CSS:
+
+            &
+            lt;
+        pre & gt;#
+        example - view - filters {
+            overflow: hidden;
+            position: relative;
+            height: 450 px;
+        }#
+        example - trigger - toggle {
+            cursor: pointer;
+        }#
+        example - element - toggle {
+            display: none;
+        }#
+        example - toggled - element {
+            position: absolute;
+            right: 0 px;
+            width: 100 % ; -
+            webkit - transition: all 1 s; -
+            moz - transition: all 1 s; -
+            mos - transition: all 1 s; -
+            o - transition: all 1 s;
+            transition: all 1 s;
+        }#
+        example - element - toggle: not(: checked) ~#example - toggled - element {
+                right: -1000 px;
+            } &
+            lt;
+        /pre&gt;
+
+
+
+        &
+        lt;
+        style type = & quot;
+        text / css & quot; & gt;#
+        example - view - filters {
+            overflow: hidden;
+            position: relative;
+            height: 450 px;
+        }#
+        example - trigger - toggle {
+            cursor: pointer;
+        }#
+        example - element - toggle {
+            display: none;
+        }#
+        example - toggled - element {
+            position: absolute;
+            right: 0 px;
+            width: 100 % ; -
+            webkit - transition: all 1 s; -
+            moz - transition: all 1 s; -
+            mos - transition: all 1 s; -
+            o - transition: all 1 s;
+            transition: all 1 s;
+        }#
+        example - element - toggle: not(: checked) ~#example - toggled - element {
+                right: -1000 px;
+            } &
+            lt;
+        /style&gt;
+
+        Para ver el efecto en acción pincha en el botón:
+            &
+            lt;
+        label
+        for = & quot;
+        example - element - toggle & quot;
+        id = & quot;
+        example - trigger - toggle & quot; & gt;
+        Disparador & lt;
+        /label&gt; &lt;input id=&quot;example-element-toggle&quot; type=&quot;checkbox&quot; / & gt;
+
+        &
+        lt;
+        i aria - hidden = & quot;
+        true & quot;
+        class = & quot;
+        fa fa - smile - o fa - 5 x & quot; & gt; & amp;
+        nbsp; & lt;
+        /i&gt; &
+        amp;
+        nbsp;
+
+        &
+        lt;
+        pre & gt; &
+        amp;
+        lt;
+        div id = & quot;
+        example - view - filters & quot; & amp;
+        gt; &
+        amp;
+        lt;
+        p & amp;
+        gt;
+        Para ver el efecto en acción pincha en el botón:
+            &
+            amp;
+        lt;
+        /p&amp;gt; &
+        amp;
+        lt;
+        label
+        for = & quot;
+        example - element - toggle & quot;
+        id = & quot;
+        example - trigger - toggle & quot; & amp;
+        gt; & amp;
+        lt;
+        span class = & quot;
+        btn btn - success & quot; & amp;
+        gt; & amp;
+        amp;
+        Disparador & amp;
+        lt;
+        /span&amp;gt;&amp;lt;/label & amp;
+        gt; & amp;
+        lt;
+        input id = & quot;
+        example - element - toggle & quot;
+        type = & quot;
+        checkbox & quot;
+        /&amp;gt; &
+        amp;
+        lt;
+        div id = & quot;
+        example - toggled - element & quot; & amp;
+        gt; &
+        amp;
+        lt;
+        i aria - hidden = & quot;
+        true & quot;
+        class = & quot;
+        fa fa - smile - o fa - 5 x & quot; & amp;
+        gt; & amp;
+        amp;
+        nbsp; & amp;
+        lt;
+        /i&amp;gt; &
+        amp;
+        lt;
+        /div&amp;gt; &
+        amp;
+        lt;
+        /div&amp;gt; &
+        lt;
+        /pre&gt;
+
+
+
+
+
+        &
+        lt;
+        hr / & gt;
+        Más adelante seguiremos analizando otras opciones para emular efectos Javascript con hojas de estilo CSS.
+
+        &
+        lt;
+        hr / & gt; &
+        lt;
+        i aria - hidden = & quot;
+        true & quot;
+        class = & quot;
+        fa fa - info - circle & quot; & gt; & amp;
+        nbsp; & lt;
+        /i&gt; Si quieres ver el resultado en el entorno real visita efisioterapia.net desde el móvil o juega con el temaño de ventana de tu navegador.",
+        "url": "/post/efecto-slide-con-css-selectores-y-transiciones/",
+
+        "image": {
+            "@type": "ImageObject",
+
+            "url": "http://www.estudionexos.com/public/files/efisioterapia.jpg",
+
+            "height": 800,
+            "width": 800
+        },
+
+        "dateCreated": "2017-11-27",
+        "datePublished": "2017-11-27",
+        "dateModified": "2017-11-27",
+
+
+        "keywords": "Portfolio Drupal Responsive Diseño y desarrollo CSS "
+
+        }
+    </script>
+
+
+
+
+
+</head>
+
+<body class="post">
+    <script>
+        document.body.className += ' fade-out';
+    </script>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div id="navigation" class="col-md-2">
+                <div class="inner">
+                    <p class="logo">
+                        <a href="/">
+                            <img src="/public/theme/redesign2017/img/logo-nexos.png" class="img-responsive" alt="Estudio Nexos">
+                        </a>
+                    </p>
+                    <div class="text-center">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="menu-collapse" class="collapse navbar-collapse">
+                        <ul class="list-unstyled">
+                            <li><a href="/diseno-y-desarrollo.html">Diseño y desarrollo</a></li>
+                            <li><a href="/alojamiento-a-medida.html">Alojamiento a medida</a></li>
+                            <li><a href="/gestion-documental.html">Gestión documental</a></li>
+                            <li><a href="/comunicaciones.html">Comunicaciones</a></li>
+                        </ul>
+                        <p class="contact"><small>
+                            <strong>Contacto</strong><br />
+                            <a href="tel:+34983070900"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;(+34) 983 070 900</a><br />
+                            <a href="/contacta.html"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;Envía un correo</a><br />
+                            <a href="/soporte.html"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;&nbsp;Soporte</a><br />
+                        </small></p>
+                        <p class="social"><small>
+                            <a href="/contribuciones.html"><i class="fa fa-gift" aria-hidden="true"></i>&nbsp;<strong>Contribuciones</strong></a>
+                            &nbsp;&nbsp;
+                            <a href="https://github.com/EstudioNexos" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github</a>
+                        </small></p>
+                        <p class="social"><small>
+                            <a href="/post"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<strong>Blog</strong></a>
+                            &nbsp;&nbsp;
+                            <a href="https://www.facebook.com/ENexos" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;Facebook</a>
+                        </small></p>
+                        <p class="social">
+                            <form role="search" method="get" action="/search/">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                    <input type="text" class="form-control" name="q" placeholder="Buscar">
+                                </div>
+                            </form>
+                        </p>
+                        <p class="social"><small><a href="/aviso-legal-y-politica-de-privacidad.html"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;&nbsp;Política de privacidad</a></small></p>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="col-md-10">
+                <div class="inner">
+
+
+                    <div itemscope itemtype="http://schema.org/Article">
+                        <div class="content-wrapper clearfix">
+
+
+
+                            <!-- service breadcrumbs -->
+
+
+                            <div class="breadcrumbs">
+
+
+
+
+
+
+
+
+
+                                <a href="/diseno-y-desarrollo.html">Diseño y desarrollo</a> &nbsp;/&nbsp;
+
+
+
+
+                            </div>
+
+
+                            <!-- end service breadcrumbs -->
+
+                            <h1 class="section-title" itemprop="name">
+                                <meta itemprop="headline" content="Historia: Efecto &quot;slide&quot; con CSS. Selectores y transiciones">Efecto &quot;slide&quot; con CSS. Selectores y transiciones
+
+                            </h1>
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="post ">
+
+                                <div class="entry">
+
+
+                                    <div class="meta">
+
+                                        <div class="info">
+                                            <span class="date" itemprop="dateCreated"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;<meta itemprop="datePublished" content="2017-11-27">27·11·2017</span> &nbsp;&nbsp;
+                                            <span itemprop="keywords">
+                            <span class="tag"><a href="/taxonomy/basic/portfolio/" class="btn btn-info"><i class="fa fa-tag"></i>&nbsp;&nbsp;Portfolio</a></span>&nbsp;<span class="tag"><a href="/taxonomy/basic/drupal/" class="btn btn-info"><i class="fa fa-tag"></i>&nbsp;&nbsp;Drupal</a></span>&nbsp;
+                                            <span class="tag"><a href="/taxonomy/basic/responsive/" class="btn btn-info"><i class="fa fa-tag"></i>&nbsp;&nbsp;Responsive</a></span>&nbsp;<span class="tag"><a href="/taxonomy/basic/diseno-y-desarrollo/" class="btn btn-info"><i class="fa fa-tag"></i>&nbsp;&nbsp;Diseño y desarrollo</a></span>&nbsp;
+                                            <span class="tag"><a href="/taxonomy/basic/css/" class="btn btn-info"><i class="fa fa-tag"></i>&nbsp;&nbsp;CSS</a></span>&nbsp;
+                                            </span>
+
+                                        </div>
+                                        <br />
+                                    </div>
+
+
+                                    <div itemprop="articleBody">
+
+
+                                        <div class="pull-right" style="margin:0 10px 20px;">
+
+                                            <img src="/public/thumbnails/16/17/161737325933203eb7f96e1fdf593d8e.jpg" alt="Efecto &quot;slide&quot; con CSS. Selectores y transiciones" class="img-responsive img-thumbnail" itemprop="image" />
+
+                                        </div>
+
+
+
+                                        <p>Recientemente hemos desarrollado un tema visual responsive para la web <em>efisioterapia.net</em> que funciona sobre Drupal 7. Basado en bootstrap, el tema visual debía cumplir los requerimientos de sencillez y
+                                            limpieza y estar orientado principalmente a los dispositivos móviles. Para no recargar el ya excesivo código que genera el propio drupal y evitar así contruibuir a ralentizar la carga de las páginas, optamos
+                                            por usar la menor cantidad posible de Javascript en el tema visual y sustituirlo por técnicas CSS.</p>
+
+                                        <p>Las secciones principales de la web muestran listados de contenidos construidos con <em>views</em> y mediante filtros expuestos se ofrece la opción de filtrado por categoría, título y otros campos. Como el filtrado
+                                            de contenidos es opcional, se optó porque no estuviera visible en primer plano en los dispositivos móviles, con el objetivo de ahorrar espacio y mostrar siempre en primer lugar contenido relevante. No obstante
+                                            la funcionalidad debía seguir siendo accesible.</p>
+
+                                        <p>Para desplegar los filtros expuestos en los dispositivos móviles se ofrece un botón, pero en lugar de activarse por Javascript lo hace usando estilos y transiciones CSS. Vamos a ver a continuación cómo.</p>
+
+                                        <h2>El HTML en Drupal</h2>
+
+                                        <p>Para conseguir el efecto deseado se necesita emular el efecto "toggle" o "slide" con CSS y añadir las transiciones necesarias para hacer suavemente el despliegue de los campos.</p>
+
+                                        <p>Para emular el efecto Javascript usamos la técnica desarrollada <a href="https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/" target="_blank">aquí <i aria-hidden="true" class="fa fa-external-link">&nbsp;</i></a>.
+                                            A diferencia del ejemplo, que realiza un <em>toggle</em> normal, nosotros vamos a realizar un efecto <em>slide</em> apareciendo los filtros desde un lateral.</p>
+
+                                        <p>Sobreescribimos el template <code>views-view--page.tpl.php</code> para incluir el etiquetado y las clases necesarias. El resultado:</p>
+
+                                        <pre>
+  &lt;!-- codigo correspondiente a los filtros expuestos --&gt;
+  &lt;?php if ($exposed): ?&gt;
+    &lt;div class="view-filters"&gt;
+        &lt;label id="trigger-toggle" for="element-toggle"&gt;&lt;span class="btn btn-default btn-sm"&gt;&lt;i class="fa fa-filter" aria-hidden="true"&gt;&lt;/i&gt;&amp;nbsp;Filtros&lt;/span&gt;&lt;/label&gt;
+        &lt;input id="element-toggle" type="checkbox" /&gt;
+        &lt;div id="toggled-element"&gt;
+          &lt;?php print $exposed; ?&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;?php endif; ?&gt;
+</pre>
+
+                                        <p>De esta manera ya disponemos de los 3 elementos necesarios para ejecutar el efecto:</p>
+
+                                        <ol>
+                                            <li>un elemento visible que haga de <strong>disparador</strong>: <code>&lt;label id="trigger-toggle" for="element-toggle"&gt;</code></li>
+                                            <li>un elemento oculto al que haga referencia el anterior (mediante el atributo <code>for</code>): <code>&lt;input id="element-toggle" type="checkbox" /&gt;</code></li>
+                                            <li>y el elemento a <strong>mostrar/ocultar</strong>: <code>&lt;div id="toggled-element"&gt;</code></li>
+                                        </ol>
+
+                                        <h2>El CSS para pantallas móviles</h2>
+
+                                        <pre>
+/* El disparador solo será visible para dispositivos de menos de 600px de ancho */
+#trigger-toggle,
+#element-toggle { display:none; }
+
+/* Hacemos visible el disparador y aplicamos los estilos a partir de 600px */
+@media (max-width: 600px) {
+
+/* Hacemos visible el disparador */
+    #trigger-toggle {
+        display:block;
+        cursor: pointer;
+    }
+
+/* Para conseguir el efecto de desplazamiento lateral posicionamos de manera absoluta el elemento. También le asignamos las transiciones deseadas. Al activar el disparador como se ha descrito, las propiedades se aplican en función de la transición definida  */
+    #toggled-element {
+        position:absolute;
+        right:0px;
+        width:100%;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -mos-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+    }
+
+/* Para hacer un efecto "slide" en lugar de ocultar el elemento con display:none, lo sacamos de la vista por un lateral */
+    #element-toggle:not(:checked) ~ #toggled-element {
+        right:-700px;
+    }
+}</pre>
+
+                                        <p>La clave para este efecto es el uso de dos <strong>selectores CSS</strong>: la pseudoclase de negación <code>:not</code> (<a href="https://developer.mozilla.org/es/docs/Web/CSS/:not()" target="_blank">Info <i aria-hidden="true" class="fa fa-info-circle">&nbsp;</i></a>)
+                                            en el disparador y el selector de hermanos <code>~</code> (<a href="https://developer.mozilla.org/es/docs/Web/CSS/Selectores_hermanos_generales" target="_blank">Info <i aria-hidden="true" class="fa fa-info-circle">&nbsp;</i></a>)
+                                            que permite seleccionar el segundo elemento (el que queremos mostrar/ocultar) sólo si está precedido por el primero (el disparador) y ambos comparten un padre común.</p>
+
+                                        <p>En el ejemplo, la etiqueta <code>label</code> del disparador actuaría como un interruptor para marcar y desmarcar la etiqueta <code>input</code> del tipo <code>checkbox</code>. Las propiedades se aplicarían al elemento
+                                            que no esté representado por el argumento, o sea, cuando el <code>input</code> no está marcado el elemento a mostar/ocultar permanece fuera de la vista porque se le aplica un margen lateral negativo. Si el <code>input</code>                                            se marca (al pinchar el <code>label</code> que actúa de disparador), las propiedades no se aplican y el elemento va a su posición en la pantalla (sin desplazamiento lateral).</p>
+
+                                        <p>Este efecto de vaivén se suaviza con la propiedad de transición que asignemos al elemento a mostar/ocultar. Así de fácil :D</p>
+
+                                        <hr />
+                                        <h3>Ejemplo</h3>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p>El código CSS:</p>
+
+                                                <pre>
+#example-view-filters {
+    overflow: hidden;
+    position:relative;
+    height:450px;
+}
+#example-trigger-toggle {
+    cursor: pointer;
+}
+#example-element-toggle {
+    display:none;
+}
+#example-toggled-element {
+    position:absolute;
+    right:0px;
+    width:100%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -mos-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#example-element-toggle:not(:checked) ~ #example-toggled-element {
+    right:-1000px;
+}
+</pre>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <style type="text/css">
+                                                    #example-view-filters {
+                                                        overflow: hidden;
+                                                        position: relative;
+                                                        height: 450px;
+                                                    }
+                                                    
+                                                    #example-trigger-toggle {
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    #example-element-toggle {
+                                                        display: none;
+                                                    }
+                                                    
+                                                    #example-toggled-element {
+                                                        position: absolute;
+                                                        right: 0px;
+                                                        width: 100%;
+                                                        -webkit-transition: all 1s;
+                                                        -moz-transition: all 1s;
+                                                        -mos-transition: all 1s;
+                                                        -o-transition: all 1s;
+                                                        transition: all 1s;
+                                                    }
+                                                    
+                                                    #example-element-toggle:not(:checked)~#example-toggled-element {
+                                                        right: -1000px;
+                                                    }
+                                                </style>
+                                                <div id="example-view-filters">
+                                                    <p>Para ver el efecto en acción pincha en el botón:</p>
+                                                    <label for="example-element-toggle" id="example-trigger-toggle"><span class="btn btn-success">Disparador</span></label> <input id="example-element-toggle" type="checkbox" />
+                                                    <div id="example-toggled-element">
+                                                        <div class="text-center"><i aria-hidden="true" class="fa fa-smile-o fa-5x">&nbsp;</i></div>
+                                                        &nbsp;
+
+                                                        <pre>
+&lt;div id="example-view-filters"&gt;
+  &lt;p&gt;
+    Para ver el efecto en acción pincha en el botón:
+  &lt;/p&gt;
+  &lt;label for="example-element-toggle" id="example-trigger-toggle"&gt;&lt;span class="btn btn-success"&gt;&amp;Disparador&lt;/span&gt;&lt;/label&gt; &lt;input id="example-element-toggle" type="checkbox" /&gt;
+  &lt;div id="example-toggled-element"&gt;
+    &lt;i aria-hidden="true" class="fa fa-smile-o fa-5x"&gt;&amp;nbsp;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr />
+                                        <p>Más adelante seguiremos analizando otras opciones para emular efectos Javascript con hojas de estilo CSS.</p>
+
+                                        <hr />
+                                        <p><i aria-hidden="true" class="fa fa-info-circle">&nbsp;</i> Si quieres ver el resultado en el entorno real visita <strong><a href="https://www.efisioterapia.net/articulos" target="_blank">efisioterapia.net</a></strong>                                            desde el móvil o juega con el temaño de ventana de tu navegador.</p>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="related">
+
+
+
+                                    <hr />
+                                    <p><strong>Recursos relacionados:</strong></p>
+
+
+                                    <div id="links" class="row">
+
+                                        <!--files-->
+
+
+                                        <div class="col-md-3">
+                                            <a href="/public/files/efisioterapia.jpg" class="thumbnail" rel="gallery" data-gallery>
+                                                <img src="/public/thumbnails/49/99/4999e5de4f44829c5b5436f98fbebf0d.jpg" alt="efisioterapia" title="efisioterapia" class="img-responsive" itemprop="image" />
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div id="blueimp-gallery" class="blueimp-gallery">
+                                        <!-- The container for the modal slides -->
+                                        <div class="slides"></div>
+                                        <!-- Controls for the borderless lightbox -->
+                                        <h3 class="title"></h3>
+                                        <a class="prev">‹</a>
+                                        <a class="next">›</a>
+                                        <a class="close">×</a>
+                                        <a class="play-pause"></a>
+                                        <ol class="indicator"></ol>
+                                        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                                        <div class="modal fade">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                                                        <h4 class="modal-title"></h4>
+                                                    </div>
+                                                    <div class="modal-body next"></div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                                                        <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br />
+
+
+
+                                    <hr />
+                                    <div class="author row">
+                                        <div class="col-xs-1">
+                                            <img src="https://www.estudionexos.com/public/files/perfil-josue.jpg" class="img-responsive img-circle" />
+                                        </div>
+                                        <div class="col-xs-11">
+                                            <h4><span class="label label-primary">Autor</span>&nbsp;&nbsp;Josué Valencia&nbsp;&nbsp;<a class="btn btn-xs btn-default" href="https://twitter.com/josuevalencia" target="_blank" title="Twitter">&nbsp;<i aria-hidden="true" class="fa fa-twitter">&nbsp;</i></a>&nbsp;&nbsp;
+                                                <a class="btn btn-xs btn-default" href="https://www.linkedin.com/in/josu%C3%A9-valencia-8b444197/" target="_blank" title="Linkedin">&nbsp;<i aria-hidden="true" class="fa fa-linkedin">&nbsp;</i></a>
+                                            </h4>
+                                            <p>Desde 2005 haciendo diseño y desarrollo web con software libre.</p>
+                                            <p>Especializado en diseño web responsive y optimización de código para buscadores.</p>
+                                        </div>
+                                    </div>
+                                    <hr />
+
+
+                                </div>
+
+
+
+
+
+
+                                <br />
+                                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                                <div class="addthis_sharing_toolbox"></div>
+
+
+
+                                <!---->
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                            <hr />
+                            <h2 class="title">Historias relacionadas</h2>
+                            <div class="row">
+
+                                <article itemscope itemtype="http://schema.org/Article" class="col-md-4">
+                                    <div class="thumbnail">
+
+
+
+                                        <a href="/post/respuestas-json-con-timber/">
+
+                                            <img src="/public/thumbnails/ba/a7/baa744bfa796ceac29ef3b94005ff711.jpg" class="img-responsive" alt="Respuestas JSON con Timber" title="Respuestas JSON con Timber" itemprop="image" />
+
+                                        </a>
+
+
+
+                                        <div class="caption">
+                                            <h3 itemprop="name"><a href="/post/respuestas-json-con-timber/">Respuestas JSON con Timber</a></h3>
+                                            <div itemprop="description">
+                                                <p>Nuestro enfoque es construir sitios web rápidos y fácilmente mantenibles y actualizables a medio/largo plazo gracias a un reducido número de dependencias.</p>
+
+                                                <p>A pesar de que nuestra plataforma de preferencia es Python/Django, los tiempos cambian y las modas se imponen. Atrás quedaron el PHP-Nuke, Post-Nuke, Xoops, Mambo, Spip, Joomla. Ahora Wordpress está en ...</p>
+                                            </div>
+                                            <p><a href="/post/respuestas-json-con-timber/" class="btn btn-danger" itemprop="url"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;&nbsp;Leer historia completa</a></p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article itemscope itemtype="http://schema.org/Article" class="col-md-4">
+                                    <div class="thumbnail">
+
+
+
+                                        <a href="/post/disenando-para-la-feria-de-libro-antiguo-y-de-ocasion-de-valladolid-2019/">
+
+                                            <img src="/public/thumbnails/9f/df/9fdf3aace2898ea89d8beb8ace5181b6.jpg" class="img-responsive" alt="Diseñando para la Feria del Libro Antiguo y de Ocasión de Valladolid 2019" title="Diseñando para la Feria del Libro Antiguo y de Ocasión de Valladolid 2019"
+                                                itemprop="image" />
+
+                                        </a>
+
+
+
+                                        <div class="caption">
+                                            <h3 itemprop="name"><a href="/post/disenando-para-la-feria-de-libro-antiguo-y-de-ocasion-de-valladolid-2019/">Diseñando para la Feria del Libro Antiguo y de Ocasión de Valladolid 2019</a></h3>
+                                            <div itemprop="description">
+                                                <p>Este año ALVACAL nos ofrece como tema para la 27ª Feria del Libro Antiguo y de Ocasión un recorrido a través del libro desde Maguncia hasta el Valladolid de nuestros días.</p>
+
+                                                <p>A través de una exposición se realiza un breve paseo por la historia del libro impreso. Partiendo de Maguncia, donde Gutenberg inventó la primera ...</p>
+                                            </div>
+                                            <p><a href="/post/disenando-para-la-feria-de-libro-antiguo-y-de-ocasion-de-valladolid-2019/" class="btn btn-danger" itemprop="url"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;&nbsp;Leer historia completa</a></p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article itemscope itemtype="http://schema.org/Article" class="col-md-4">
+                                    <div class="thumbnail">
+
+
+
+                                        <a href="/post/mapas-interactivos-sin-usar-google-maps/">
+
+                                            <img src="/public/thumbnails/f7/33/f7335d19e05406a1d94c14abcd549325.jpg" class="img-responsive" alt="Mapas interactivos sin usar Google Maps" title="Mapas interactivos sin usar Google Maps" itemprop="image" />
+
+                                        </a>
+
+
+
+                                        <div class="caption">
+                                            <h3 itemprop="name"><a href="/post/mapas-interactivos-sin-usar-google-maps/">Mapas interactivos sin usar Google Maps</a></h3>
+                                            <div itemprop="description">
+                                                <p><em>Leaflet</em> es una librería JavasScript de código abierto para embeber mapas. Es una librería perfecta para sustituir a <em>Google Maps</em> en los sitios en que queremos incluir un mapa de situación
+                                                    de nuestro negocio o una serie de marcadores con direcciones de interés.</p>
+
+                                                <p>Recientemente, hemos utilizado esta librería en el proyecto <a href="https://podorunners.com/" target="_blank">Podorunners</a>, en el que ...</p>
+                                            </div>
+                                            <p><a href="/post/mapas-interactivos-sin-usar-google-maps/" class="btn btn-danger" itemprop="url"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;&nbsp;Leer historia completa</a></p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+
+
+
+
+
+                            <div class="call" itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness">
+                                <meta itemprop="name" content="Estudio Nexos" />
+                                <p><big>Solicítanos información</big></p>
+                                <p class="tlf" itemprop="telephone"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Tel: <a href="tel:+34983070900">(+34) 983 070 900</a></p>
+                                <p><a href="/contacta.html" class="btn btn-danger btn-lg"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Envía un correo</a></p>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- end content -->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <span id="top-link-block" class="hidden">
+        <a href="#top" class="btn btn-link"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+            <i class="glyphicon glyphicon-chevron-up"></i>
+        </a>
+    </span>
+    <!-- /top-link-block -->
+
+    <!-- IE9 form fields placeholder fix -->
+    <!--[if lt IE 9]>
+<script>contact_form_IE9_placeholder_fix();</script>
+<![endif]-->
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51b5f0b432660625" async="async"></script>
+
+
+    <style>
+        #cookie-modal-wrapper {
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 2000;
+            background: #000;
+        }
+        
+        #cookie-modal {
+            background: #000;
+            color: #fff;
+            width: 100%;
+            padding: 12px 20px;
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        #cookie-modal h4 {
+            margin: 5px 0;
+            font-size: 18px;
+            line-height: 24px;
+            color: #fff;
+        }
+        
+        #cookie-modal p {
+            margin-bottom: 0px;
+        }
+        
+        #cookie-modal a {
+            color: #ccc;
+            text-decoration: underline;
+        }
+        
+        #cookie-modal a.close-cookie-modal.close {
+            color: #fff;
+            font-size: 2em;
+            opacity: 1;
+            padding: 0 20px;
+            text-shadow: none;
+            text-decoration: none;
+        }
+    </style>
+    <div id="cookie-modal-wrapper">
+        <div id="cookie-modal">
+            <a href="?show_cookies_dialog=False" class="close-cookie-modal close">&times;</a>
+            <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Puede cambiar la configuración u obtener más información en nuestra <a href="/politica-de-cookies.html">política de cookies</a>.</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.close-cookie-modal').click(function(e) {
+                e.preventDefault();
+                $.get($(this).attr('href'));
+                $('#cookie-modal').slideToggle("slow");
+                $('.close-cookie-modal').addClass("hide");
+
+            });
+        });
+    </script>
+
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "//stats.getcloud.info/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', 46]);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript><p><img src="//stats.getcloud.info//piwik.php?idsite=46" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
+
+
+</body>
+
+</html>
