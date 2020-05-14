@@ -1,2 +1,0 @@
-# SisFactura
-Sistema de facturación
