@@ -1,6 +1,6 @@
 <?php
 
-use App\Prueba\Orden;
+use App\Prueba\Orden;   
 use App\Prueba\OrdenProducto;
 use App\Prueba\Producto;
 use Illuminate\Http\Request;
@@ -21,6 +21,9 @@ use Mailgun\Mailgun;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('register', 'Auth/RegisterController@showRegistrationForm')->name('register');
+
 Route::get('prueba/orden', function (Request $request) {
     if (!$request->ajax())
         return redirect('/');

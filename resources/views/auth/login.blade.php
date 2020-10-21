@@ -45,6 +45,11 @@
                                     Iniciar
                                 </button>
                             </div>
+                            <div class="col-md-8 offset-md-4">
+                                <a href="{{ route('register') }}" class="btn btn-primary">
+                                    Registro
+                                </a>
+                            </div>
                         </div>
                     </form>
                 </div>
